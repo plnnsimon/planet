@@ -1,0 +1,873 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="712.5" scrolly="344" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="889.0847047850402" scrolly="614.080807449991" scale="0.6260120832164014">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setCameraParam" id="ff[?h3QV^R_!%Mhg7Th9" x="-950" y="-810">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" type="ORBIT_MIN_DISTANCE_PERSP"></mutation>
+      <field name="TYPE">ORBIT_MIN_DISTANCE_PERSP</field>
+      <value name="ORBIT_MIN_DISTANCE_PERSP">
+        <shadow type="math_number" id="g/OF;5sZJ28)Dh!`wVmJ">
+          <field name="NUM">8</field>
+        </shadow>
+      </value>
+      <value name="OBJECT">
+        <shadow type="objectList" id="7Wp9.[iC`_,ZIv-;^O4@">
+          <field name="FIELDNAME">Camera</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="setCameraParam" id="+PIKA{FOqw.wu%V_0d6^">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" type="ORBIT_MAX_DISTANCE_PERSP"></mutation>
+          <field name="TYPE">ORBIT_MAX_DISTANCE_PERSP</field>
+          <value name="ORBIT_MAX_DISTANCE_PERSP">
+            <shadow type="math_number" id=")ZcghPL*iCI#_Ml4dpee">
+              <field name="NUM">8</field>
+            </shadow>
+          </value>
+          <value name="OBJECT">
+            <shadow type="objectList" id="-C[z_:/WxfAm@Aj(Cw_a">
+              <field name="FIELDNAME">Camera</field>
+            </shadow>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="p4jKOmrsidj{N9)lz0s8" x="-950" y="-650">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="[$XccR@`ab1V%|DqzpiF">
+          <field name="FIELDNAME">clouds</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="setActiveCamera" id="_1[JlF{@cTrJw81B=aKF">
+          <value name="CAMERA">
+            <shadow type="objectList" id="wqI@q:BEdH$D_LCa0d3:">
+              <field name="FIELDNAME">Camera</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setCameraParam" id="~,P3l@=9)6m=8uV8;oyR">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" type="ORBIT_MIN_DISTANCE_PERSP"></mutation>
+              <field name="TYPE">ORBIT_MIN_DISTANCE_PERSP</field>
+              <value name="ORBIT_MIN_DISTANCE_PERSP">
+                <shadow type="math_number" id="NU@?7d1MT=zF#M)q:/U_">
+                  <field name="NUM">10</field>
+                </shadow>
+              </value>
+              <value name="OBJECT">
+                <shadow type="objectList" id="4H)stTO==EyTvTjt^pXA">
+                  <field name="FIELDNAME">Camera</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setCameraParam" id="I55seXr!LcAtm@8ZIsKD">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" type="ORBIT_MAX_DISTANCE_PERSP"></mutation>
+                  <field name="TYPE">ORBIT_MAX_DISTANCE_PERSP</field>
+                  <value name="ORBIT_MAX_DISTANCE_PERSP">
+                    <shadow type="math_number" id="X%viy1J5v`3V9#@!N3ET">
+                      <field name="NUM">10</field>
+                    </shadow>
+                  </value>
+                  <value name="OBJECT">
+                    <shadow type="objectList" id="0ZRm=P}+0q-k#Q`65_Rd">
+                      <field name="FIELDNAME">Camera</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="lookAt" id="y_jB6jDuMmfOf0t{5RVW">
+                      <value name="LOOKAT">
+                        <shadow type="objectList" id=";xUfY?scVHu.39.SEcDl">
+                          <field name="FIELDNAME">earth</field>
+                        </shadow>
+                      </value>
+                      <value name="DURATION">
+                        <shadow type="math_number" id="e@O5EGqTD6/s655`c,xV">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="whenClicked" id="O:7VajONu!EHTbt}hTf~">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="-15u70Li:}nDNIIHfQ#x">
+              <field name="FIELDNAME">moon</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="setActiveCamera" id="`XXB{BB0M2Q[Vz3n:L(v">
+              <value name="CAMERA">
+                <shadow type="objectList" id="DdkQ(A^J}Y]Gm.-Q,KMe">
+                  <field name="FIELDNAME">Camera-moon</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setCameraParam" id="4e}ITVir9f[zKqC4!;z`">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" type="ORBIT_MIN_DISTANCE_PERSP"></mutation>
+                  <field name="TYPE">ORBIT_MIN_DISTANCE_PERSP</field>
+                  <value name="ORBIT_MIN_DISTANCE_PERSP">
+                    <shadow type="math_number" id="j?snHMOw4v?I#}MGfO@x">
+                      <field name="NUM">5</field>
+                    </shadow>
+                  </value>
+                  <value name="OBJECT">
+                    <shadow type="objectList" id="imPS.C^Ue]]bs(/T]{Rj">
+                      <field name="FIELDNAME">Camera</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setCameraParam" id="{yi{mtr{8hOi^-T`=OBw">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" type="ORBIT_MAX_DISTANCE_PERSP"></mutation>
+                      <field name="TYPE">ORBIT_MAX_DISTANCE_PERSP</field>
+                      <value name="ORBIT_MAX_DISTANCE_PERSP">
+                        <shadow type="math_number" id="1M%F{O9Te0i+nV6IW2UH">
+                          <field name="NUM">20</field>
+                        </shadow>
+                      </value>
+                      <value name="OBJECT">
+                        <shadow type="objectList" id="Z#Q{u%WCa;y(`tf)X(*(">
+                          <field name="FIELDNAME">Camera</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="lookAt" id="bIP?yE](kqHzXeMHc{JM">
+                          <value name="LOOKAT">
+                            <shadow type="objectList" id="M6X+{XYWfL/skp1}@i-y">
+                              <field name="FIELDNAME">moon</field>
+                            </shadow>
+                          </value>
+                          <value name="DURATION">
+                            <shadow type="math_number" id="=1sz41y)lvit*P+K)w)L">
+                              <field name="NUM">1</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id="T)BC5fbGWtKXpF{yfCF%">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="~9TC^fG+i/#GvnCDiuPJ">
+                  <field name="FIELDNAME">clouds</field>
+                </shadow>
+                <block type="getEntityByName" id="q+kHmo6*)iS)@PV{R(@{">
+                  <field name="GET_WHAT">OBJECT</field>
+                  <value name="NAME">
+                    <shadow type="text" id="Mo4MN1B2jzOL8Z=7%?46">
+                      <field name="TEXT">poi1</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="vgb}:~cY;H]l,jF#$e,:">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id=";|hel#pZ})|ZPnU!9lH-">
+                      <field name="FIELDNAME">venus-material</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="U~(Pi(F0/p8=7}8gt_z4">
+                      <field name="FIELDNAME">earth</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="whenHovered" id="U7V#h~HhG3/MaBjkMv`+">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList" id="Ek?%Y.;Z3)VoI46t$SXb">
+                      <field name="FIELDNAME">earth</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO_OVER">
+                    <block type="setHTMLElemStyle" id="eev8Y}XGC5e0Hu-.(Mvf">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="r_J2jMt([9p]0[gam)fa">
+                          <field name="TEXT">block</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text">
+                          <field name="TEXT"/>
+                        </shadow>
+                        <block type="lists_create_with" id="?T49LrgG::Z79Y:QS42=">
+                          <mutation items="1"/>
+                          <value name="ADD0">
+                            <block type="text" id="O1pU:!X!F;_Ll`Y3{+hH">
+                              <field name="TEXT">poi1</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                  <statement name="DO_OUT">
+                    <block type="setHTMLElemStyle" id="+1`lDY$(5Y9CAfi=3s@(">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="@bc3aUlV9G]AsNzvH+)m">
+                          <field name="TEXT">none</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text">
+                          <field name="TEXT"/>
+                        </shadow>
+                        <block type="lists_create_with" id="H(xclqWmJk;1^Kkqq:Z5">
+                          <mutation items="1"/>
+                          <value name="ADD0">
+                            <block type="text" id="QeX0tVZD]gB^elrrI!Pb">
+                              <field name="TEXT">poi1</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="whenHovered" id="=~nG}1Dp3_i9#tfrUt?3">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList" id=")Qfzk0_KGHlwa9{goE|M">
+                          <field name="FIELDNAME">clouds</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO_OVER">
+                        <block type="setHTMLElemStyle" id="?Q90n0tIFRpu#`S|DmV7">
+                          <field name="PROPERTY">display</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="+E[v*yMW1b{Bfu{6)8To">
+                              <field name="TEXT">block</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text">
+                              <field name="TEXT"/>
+                            </shadow>
+                            <block type="lists_create_with" id="FVwu:nPQ#?N/S[nW`/9^">
+                              <mutation items="1"/>
+                              <value name="ADD0">
+                                <block type="text" id="McfNa6*x83%lJ*#dqRFT">
+                                  <field name="TEXT">poi1</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                      <statement name="DO_OUT">
+                        <block type="setHTMLElemStyle" id=";.EG;`vUih]#4Tp0J-Lq">
+                          <field name="PROPERTY">display</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="MD9H`Aj1b#dbOVnJTG2i">
+                              <field name="TEXT">none</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text">
+                              <field name="TEXT"/>
+                            </shadow>
+                            <block type="lists_create_with" id="NKxICzygEyvr-742if-k">
+                              <mutation items="1"/>
+                              <value name="ADD0">
+                                <block type="text" id="os*vQ.^Tb$.$DB3D8fL.">
+                                  <field name="TEXT">poi1</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="whenHovered" id="KcQITvAI;}3_iF7A-k8y">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                          <field name="X_RAY">FALSE</field>
+                          <value name="VALUE">
+                            <shadow type="objectList" id="M)j$|%5~qtXXpcSFUfqY">
+                              <field name="FIELDNAME">moon</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO_OVER">
+                            <block type="setHTMLElemStyle" id="WFD!9Sb5,9SlI$Ctlh]Y">
+                              <field name="PROPERTY">display</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="VALUE">
+                                <block type="text" id="Yj.v:PgIk(X.m!0F9J1K">
+                                  <field name="TEXT">block</field>
+                                </block>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text">
+                                  <field name="TEXT"/>
+                                </shadow>
+                                <block type="lists_create_with" id="/jtM=5]|2TuT,$AZv`xJ">
+                                  <mutation items="1"/>
+                                  <value name="ADD0">
+                                    <block type="text" id="i!)jsbmgTJ~OC#;NEL?$">
+                                      <field name="TEXT">poi2</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </statement>
+                          <statement name="DO_OUT">
+                            <block type="setHTMLElemStyle" id="9S)bof4p/Pk]U6N)fg:R">
+                              <field name="PROPERTY">display</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="VALUE">
+                                <block type="text" id="|]4g`l#11L`~lq;A_Y)b">
+                                  <field name="TEXT">none</field>
+                                </block>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text">
+                                  <field name="TEXT"/>
+                                </shadow>
+                                <block type="lists_create_with" id="r/k!u{)z*pSk*e76W#NK">
+                                  <mutation items="1"/>
+                                  <value name="ADD0">
+                                    <block type="text" id="q/v8OX[5PKd02QIb1C7z">
+                                      <field name="TEXT">poi2</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="everyFrame" id=";0L.eK@QdYy-888CQigu" x="-370" y="-650">
+      <statement name="DO">
+        <block type="applyObjLocalTransform" id="%F9Dq]FmtH8pM2s`AE#+">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+          <field name="MODE">rotation</field>
+          <value name="TARGETOBJ">
+            <shadow type="objectList" id="%356k]-OjzWe:!R+D1;.">
+              <field name="FIELDNAME">clouds</field>
+            </shadow>
+          </value>
+          <value name="X">
+            <block type="math_number" id="SYA}yO{vbIjPZM#g7$A=">
+              <field name="NUM">0.005</field>
+            </block>
+          </value>
+          <value name="Y">
+            <block type="math_number" id="+RQ9hvlQpf0r{_,aa0XC">
+              <field name="NUM">0.005</field>
+            </block>
+          </value>
+          <value name="Z">
+            <block type="math_number" id="K+H%DBa$_gQ4muQ{m64=">
+              <field name="NUM">0.04</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="everyFrame" id="{FZW|LQCx1xPKpKwTpP4">
+          <statement name="DO">
+            <block type="applyObjLocalTransform" id="2)D;9|is60=zTzq[KD=1">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+              <field name="MODE">rotation</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="dR3S9f!C@Nywp;XkEO=(">
+                  <field name="FIELDNAME">earth</field>
+                </shadow>
+              </value>
+              <value name="Z">
+                <block type="math_number" id="5b/iX;.]yd~JP_k8b,Kq">
+                  <field name="NUM">0.02</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="everyFrame" id="EU,L7W$O.]vqrlo6N]wZ">
+              <statement name="DO">
+                <block type="applyObjLocalTransform" id="NT~vO-f^NAsjS`o)p(5$">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+                  <field name="MODE">rotation</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="[zb/]fiUCE+JzlK#}g.q">
+                      <field name="FIELDNAME">moon</field>
+                    </shadow>
+                  </value>
+                  <value name="Z">
+                    <block type="math_number" id="OC_`1F=5gu3i9q8y!8o}">
+                      <field name="NUM">0.2</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="addAnnotation" id="FE)QoMGfng_})JVC=_-~" x="90" y="90">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+      <value name="ANNOTATION">
+        <shadow type="text" id="[$3w8z4fKSGIyR#+Ugyd">
+          <field name="TEXT">1</field>
+        </shadow>
+      </value>
+      <value name="TARGET">
+        <shadow type="objectList" id="cR;6k0MKkb{kJvt~$D*$">
+          <field name="FIELDNAME">planet-empty</field>
+        </shadow>
+      </value>
+      <value name="CONTENTS">
+        <shadow type="text" id="HU?q^rELQE2h3ESfpU~J">
+          <field name="TEXT">Earth</field>
+        </shadow>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="w[x*=g0q01b1jGuw45Fe">
+          <field name="TEXT">poi1</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="addAnnotation" id="t52Igg5sAWS[f|oS|s$@">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+          <value name="ANNOTATION">
+            <shadow type="text" id="PHHbnO)Lt~~vJ78DoJI!">
+              <field name="TEXT">2</field>
+            </shadow>
+          </value>
+          <value name="TARGET">
+            <shadow type="objectList" id="YT}=`/bE7;pYP{|4].=k">
+              <field name="FIELDNAME">moon-empty</field>
+            </shadow>
+          </value>
+          <value name="CONTENTS">
+            <shadow type="text" id="R4w~1zdqHm|ipO*W!EkB">
+              <field name="TEXT">Moon</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="b?-W(`Zw_.v`CeGdbl~^">
+              <field name="TEXT">poi2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="1ESNIAe{PDH+mH+X3JR^">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="MTJ*|?hl:{!4Yvc_;f@k">
+                  <field name="TEXT">none</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="lists_create_with" id="]`D:J7AJr7TrE?${+~9Z">
+                  <mutation items="2"/>
+                  <value name="ADD0">
+                    <block type="text" id="pj6L2`53EGsWV}[1_n@e">
+                      <field name="TEXT">poi1</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="]aMoIScsOIAfgyj0Q,sd">
+                      <field name="TEXT">poi2</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="}dT$a-Ha0xb,qo~+m%|#" x="-950" y="190">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id="oN9`JD0i0Qa-DMo!j5+9">
+          <field name="TEXT">earth</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="tF{GnH;|gw`TA_i,]+8h">
+          <value name="VALUE2">
+            <shadow type="materialList" id="kP[Z}_zJZOOzBp?WC;~R">
+              <field name="FIELDNAME">earth-material</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="C8vXpL{NK=c3f@2`R+QE">
+              <field name="FIELDNAME">earth</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="show" id="lq*h{{Ua)1%uO4HDL*J9">
+              <value name="VALUE">
+                <shadow type="objectList" id="ZnL_0$u8%t$%8pxxn72.">
+                  <field name="FIELDNAME">clouds</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="show" id="ff!yrSr!kQQVLBJ~B{M0">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="o9Su*;VNn(:]KuD~1YQO">
+                      <field name="FIELDNAME">moon</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="removeAnnotation" id="s||n#K}pghI^#*R6f8qb">
+                      <value name="TARGET">
+                        <shadow type="objectList" id="Wiw1XE#q|)Ao][^z1(9i">
+                          <field name="FIELDNAME">planet-empty</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="addAnnotation" id=":@994Em3oN%0o=8E@7E!">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                          <value name="ANNOTATION">
+                            <shadow type="text" id="kzG,KJi^-dD4h)]-6s~z">
+                              <field name="TEXT">1</field>
+                            </shadow>
+                          </value>
+                          <value name="TARGET">
+                            <shadow type="objectList" id=";-XDGz|:WXPJ@f+E2zl`">
+                              <field name="FIELDNAME">planet-empty</field>
+                            </shadow>
+                          </value>
+                          <value name="CONTENTS">
+                            <shadow type="text" id="#i;;}CBF1D7t[B-_05Vy">
+                              <field name="TEXT">USA</field>
+                            </shadow>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id=",((#Gy37*~BiLJb{xATm">
+                              <field name="TEXT">poi1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="addAnnotation" id="lWs[hG?2z,].,IIxc2`s">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                              <value name="ANNOTATION">
+                                <shadow type="text" id="cmhzA2}Q7nRpG]NggA*G">
+                                  <field name="TEXT">2</field>
+                                </shadow>
+                              </value>
+                              <value name="TARGET">
+                                <shadow type="objectList" id="g/#^,9.`P-.!5i4j+(fd">
+                                  <field name="FIELDNAME">moon-empty</field>
+                                </shadow>
+                              </value>
+                              <value name="CONTENTS">
+                                <shadow type="text" id="Abi-~,`P{YUC9l@wIoM5">
+                                  <field name="TEXT">Moon</field>
+                                </shadow>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text" id="9.{W$#1NoxZGD=YAGPGe">
+                                  <field name="TEXT">poi2</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="setHTMLElemStyle" id="1EG=SSsmXZ(HZj[BKhHe">
+                                  <field name="PROPERTY">display</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="text" id="Ow1LuC7knw3,z4avu+|f">
+                                      <field name="TEXT">none</field>
+                                    </block>
+                                  </value>
+                                  <value name="ID">
+                                    <shadow type="text" id="u0H*ur$ufr*%T+b||SRN">
+                                      <field name="TEXT"/>
+                                    </shadow>
+                                    <block type="lists_create_with" id="_{9%~t4;r0Jz_F[5E=DG">
+                                      <mutation items="2"/>
+                                      <value name="ADD0">
+                                        <block type="text" id="8wHspKa1E:+gY7Q#w^9t">
+                                          <field name="TEXT">poi1</field>
+                                        </block>
+                                      </value>
+                                      <value name="ADD1">
+                                        <block type="text" id="7$9|_svN52wHFh3iw@:+">
+                                          <field name="TEXT">poi2</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="ulFH8INk/r~#d?^7v`wW">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="^s6e.A4%O1`FCO`j1+L7">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="text" id=")l81qj5N^M0I`k3X{Xr_">
+              <field name="TEXT">jupiter</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="X4}-zF]2b2w6@%(%zhxR">
+              <value name="VALUE2">
+                <shadow type="materialList" id="I0Y1xoF/P@.GC]=zt[]4">
+                  <field name="FIELDNAME">jupiter</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="W5}hu#I!L98jyAVlVIPy">
+                  <field name="FIELDNAME">earth</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="removeAnnotation" id="$boxvHM@5JYy;Gl4MD~-">
+                  <value name="TARGET">
+                    <shadow type="objectList" id="=l-c[!9ho[RafNgFgh53">
+                      <field name="FIELDNAME">planet-empty</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="addAnnotation" id="RD%+IjEt8Q3kj6%WQ7fd">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                      <value name="ANNOTATION">
+                        <shadow type="text" id="0Z!,qTHqu1bL+VYPEja4">
+                          <field name="TEXT">1</field>
+                        </shadow>
+                      </value>
+                      <value name="TARGET">
+                        <shadow type="objectList" id="%O9[`+pN1xRKnQW)pS`L">
+                          <field name="FIELDNAME">planet-empty</field>
+                        </shadow>
+                      </value>
+                      <value name="CONTENTS">
+                        <shadow type="text" id="3fxJMQ{2l$Q16L*2sLrI">
+                          <field name="TEXT">Jupiter</field>
+                        </shadow>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="bu[iP3r:5wT8Sv{N{5j?">
+                          <field name="TEXT">poi1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="hide" id="u+Pw7~$)gxrC/BSqpDfI">
+                          <value name="VALUE">
+                            <shadow type="objectList" id="[NFr?[mV`!h$TXL`@%=*">
+                              <field name="FIELDNAME">clouds</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="hide" id="ZJp[p?+1cNUxo0$-N7H:">
+                              <value name="VALUE">
+                                <shadow type="objectList" id=".5z5(g]Fr-y|}mpg2@mG">
+                                  <field name="FIELDNAME">moon</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="setHTMLElemStyle" id="/@7WIHN{:uH!lhl]YPIK">
+                                  <field name="PROPERTY">display</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="text" id="Xk+knX9_Gg+_7M7iC+s)">
+                                      <field name="TEXT">none</field>
+                                    </block>
+                                  </value>
+                                  <value name="ID">
+                                    <shadow type="text">
+                                      <field name="TEXT"/>
+                                    </shadow>
+                                    <block type="lists_create_with" id="H-iub0:s29yjE^{h(`uf">
+                                      <mutation items="1"/>
+                                      <value name="ADD0">
+                                        <block type="text" id="W@-E@9kQW@wdZl6Ea+LU">
+                                          <field name="TEXT">poi1</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="#w$$d~?!_l|Vw1`thDuN">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="?f,Gz}^p;uduXn!T-|$:">
+                  <field name="TEXT">venus</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="QEtq=CQVj,cx=w;K7*%$">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="b5sYbiXMVBc$]KryD[Qx">
+                      <field name="FIELDNAME">venus-material</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id=".VS*MLM.gX/_u2cP*v7(">
+                      <field name="FIELDNAME">earth</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="removeAnnotation" id="sj/MV2HCTaRDJU)[tGfv">
+                      <value name="TARGET">
+                        <shadow type="objectList" id="(~KA?Cn]w+/F#Le.RFYD">
+                          <field name="FIELDNAME">planet-empty</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="addAnnotation" id="uG0uX|,XmcG3jro`?Yu:">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                          <value name="ANNOTATION">
+                            <shadow type="text" id="ML3C0I^gp~-Sca)8~XWH">
+                              <field name="TEXT">1</field>
+                            </shadow>
+                          </value>
+                          <value name="TARGET">
+                            <shadow type="objectList" id="5:?tVL=}VSu!U6`DC5`4">
+                              <field name="FIELDNAME">planet-empty</field>
+                            </shadow>
+                          </value>
+                          <value name="CONTENTS">
+                            <shadow type="text" id="@^oL9Xlu)xZ`Wu7#]+Uv">
+                              <field name="TEXT">Venus</field>
+                            </shadow>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id="}]_cJ5)XV?dD7-E!qqG{">
+                              <field name="TEXT">poi1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="hide" id="uj^qNYtGT5MQ.I/5)i^}">
+                              <value name="VALUE">
+                                <shadow type="objectList" id="2/2V`Wmz,,1|d#k=5qPK">
+                                  <field name="FIELDNAME">clouds</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="hide" id="2D(5a+d~a#YN)QP[z|up">
+                                  <value name="VALUE">
+                                    <shadow type="objectList" id="gQx]p]4|7Nz[T7r|~w+=">
+                                      <field name="FIELDNAME">moon</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="setHTMLElemStyle" id="7bnQ?N{bAfayZ-y!o)wG">
+                                      <field name="PROPERTY">display</field>
+                                      <field name="PARENT">FALSE</field>
+                                      <value name="VALUE">
+                                        <block type="text" id="#I_V+j#+ocX9IlOTd^s`">
+                                          <field name="TEXT">none</field>
+                                        </block>
+                                      </value>
+                                      <value name="ID">
+                                        <shadow type="text">
+                                          <field name="TEXT"/>
+                                        </shadow>
+                                        <block type="lists_create_with" id="nR-;EF}%Gu4S0v}=T{80">
+                                          <mutation items="1"/>
+                                          <value name="ADD0">
+                                            <block type="text" id=".o$+M/mw_fjd+5A1C|[*">
+                                              <field name="TEXT">poi1</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="942.5999999999999" viewport-y="28" viewport-w="640.4" viewport-h="382" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
