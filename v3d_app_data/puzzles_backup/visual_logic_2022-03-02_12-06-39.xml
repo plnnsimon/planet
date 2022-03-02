@@ -1,0 +1,44 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="712.5" scrolly="344" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="712.5" scrolly="344" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="everyFrame" id=";0L.eK@QdYy-888CQigu" x="-690" y="-150">
+      <statement name="DO">
+        <block type="applyObjLocalTransform" id="%F9Dq]FmtH8pM2s`AE#+">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+          <field name="MODE">rotation</field>
+          <value name="TARGETOBJ">
+            <shadow type="objectList" id="%356k]-OjzWe:!R+D1;.">
+              <field name="FIELDNAME">clouds</field>
+            </shadow>
+          </value>
+          <value name="Z">
+            <block type="math_number" id="K+H%DBa$_gQ4muQ{m64=">
+              <field name="NUM">0.04</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="everyFrame" id="{FZW|LQCx1xPKpKwTpP4">
+          <statement name="DO">
+            <block type="applyObjLocalTransform" id="2)D;9|is60=zTzq[KD=1">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+              <field name="MODE">rotation</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="dR3S9f!C@Nywp;XkEO=(">
+                  <field name="FIELDNAME">earth</field>
+                </shadow>
+              </value>
+              <value name="Z">
+                <block type="math_number" id="5b/iX;.]yd~JP_k8b,Kq">
+                  <field name="NUM">0.02</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="942.5999999999999" viewport-y="28" viewport-w="640.4" viewport-h="382" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

@@ -1,0 +1,80 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="712.5" scrolly="344" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="721.6666564941406" scrolly="268.16668701171875" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="everyFrame" id=";0L.eK@QdYy-888CQigu" x="-690" y="-150">
+      <statement name="DO">
+        <block type="applyObjLocalTransform" id="%F9Dq]FmtH8pM2s`AE#+">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+          <field name="MODE">rotation</field>
+          <value name="TARGETOBJ">
+            <shadow type="objectList" id="%356k]-OjzWe:!R+D1;.">
+              <field name="FIELDNAME">clouds</field>
+            </shadow>
+          </value>
+          <value name="X">
+            <block type="math_number" id="SYA}yO{vbIjPZM#g7$A=">
+              <field name="NUM">0.005</field>
+            </block>
+          </value>
+          <value name="Y">
+            <block type="math_number" id="+RQ9hvlQpf0r{_,aa0XC">
+              <field name="NUM">0.005</field>
+            </block>
+          </value>
+          <value name="Z">
+            <block type="math_number" id="K+H%DBa$_gQ4muQ{m64=">
+              <field name="NUM">0.04</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="everyFrame" id="{FZW|LQCx1xPKpKwTpP4">
+          <statement name="DO">
+            <block type="applyObjLocalTransform" id="2)D;9|is60=zTzq[KD=1">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false"></mutation>
+              <field name="MODE">rotation</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="dR3S9f!C@Nywp;XkEO=(">
+                  <field name="FIELDNAME">earth</field>
+                </shadow>
+              </value>
+              <value name="Z">
+                <block type="math_number" id="5b/iX;.]yd~JP_k8b,Kq">
+                  <field name="NUM">0.02</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="ulFH8INk/r~#d?^7v`wW" x="-710" y="90">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="^s6e.A4%O1`FCO`j1+L7">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id=")l81qj5N^M0I`k3X{Xr_">
+          <field name="TEXT">jupiter</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="X4}-zF]2b2w6@%(%zhxR">
+          <value name="VALUE2">
+            <shadow type="materialList" id="I0Y1xoF/P@.GC]=zt[]4">
+              <field name="FIELDNAME">jupiter</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="W5}hu#I!L98jyAVlVIPy">
+              <field name="FIELDNAME">earth</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="942.5999999999999" viewport-y="28" viewport-w="640.4" viewport-h="382" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
