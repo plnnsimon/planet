@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="712.5" scrolly="344" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="715.0263702588936" scrolly="178.59216680566112" scale="0.7037801881261331">
+  <tab name="main" type="MainTab" active="true" scrollx="750.8332214355469" scrolly="139.83334350585938" scale="0.9">
     <block xmlns="https://developers.google.com/blockly/xml" type="everyFrame" id=";0L.eK@QdYy-888CQigu" x="-690" y="-150">
       <statement name="DO">
         <block type="applyObjLocalTransform" id="%F9Dq]FmtH8pM2s`AE#+">
@@ -46,6 +46,27 @@
               </value>
             </block>
           </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="assignMaterial" id="6wIYN!@C.CC7tGQt-_~A" x="-590" y="30">
+      <value name="VALUE2">
+        <shadow type="materialList" id="ls5Xhfh*Ko=nLm{:KIBs">
+          <field name="FIELDNAME">earth-material</field>
+        </shadow>
+      </value>
+      <value name="VALUE1">
+        <shadow type="objectList" id="huvgq@(-Qd[rsx:*Ixp?">
+          <field name="FIELDNAME">earth</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="show" id="jx%0Z/HHFg)zvc9rs;bH">
+          <value name="VALUE">
+            <shadow type="objectList" id="l}fV.WnV|NR$+1TE#n`g">
+              <field name="FIELDNAME">clouds</field>
+            </shadow>
+          </value>
         </block>
       </next>
     </block>
